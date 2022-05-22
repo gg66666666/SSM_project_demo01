@@ -51,6 +51,8 @@ public class App {
 
         System.out.println("hot-fix1");
 
+        System.out.println("hot-fix2");
+
 
     }
 

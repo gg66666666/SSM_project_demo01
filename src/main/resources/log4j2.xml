@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!--        status是日志级别:OFF>FATAL>ERROR>WARN>INFO>DEBUG>TRACE>ALL-->
+<configuration status="OFF">
+
+
+    <appenders>
+
+        <console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36}- %msg%n"/>
+        </console>
+
+        <loggers>
+            <root level="OFF">
+                <appender-ref ref="Console"/>
+            </root>
+        </loggers>
+
+    </appenders>
+
+
+</configuration>

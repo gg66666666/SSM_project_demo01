@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>员工信息</title>
+  <script th:src="@{/static/js/jquery-3.6.0.min.js}"></script>
+
+</head>
+<body>
+
+  <table id="empsTable">
+
+    <tr>
+      <th>员工编号</th>
+      <th>员工姓名</th>
+      <th>员工年龄</th>
+      <th>员工性别</th>
+      <th>员工邮箱</th>
+      <th>操作</th>
+    </tr>
+
+    <tr th:each="emp:${emps}">
+      <td th:text="${emp.eid}"></td>
+      <td th:text="${emp.empName}"></td>
+      <td th:text="${emp.age}"></td>
+      <td th:text="${emp.sex}"></td>
+      <td th:text="${emp.email}"></td>
+      <td>
+        <a href="">修改</a>
+        <a id="deleteA" th:href="@{/deleteEmpByReqId/} + ${emp.eid}" onclick="deleteFun()">删除</a>
+      </td>
+
+    </tr>
+
+
+  </table>
+
+</body>
+
+<script>
+
+  $(function () {
+
+  });
+
+  function deleteFun(){
+
+    if(!window.confirm("是否确认删除?")) {
+      $("deleteA").attr('href',"/SSJ_project_demo01/getAllEmps");
+    }
+
+  }
+</script>
+
+
+</html>

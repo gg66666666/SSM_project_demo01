@@ -38,12 +38,14 @@ public class App {
 //
 //        emps.forEach(System.out::println);
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContent.xml");
-        EmpMapper bean = context.getBean(EmpMapper.class);
+//        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContent.xml");
+//        EmpMapper bean = context.getBean(EmpMapper.class);
+//
+//        Emp emp = bean.selectByPrimaryKeyAndDept(5);
+//
+//        System.out.println(emp);
 
-        Emp emp = bean.selectByPrimaryKeyAndDept(5);
-
-        System.out.println(emp);
+        System.out.println("第二次添加");
 
 
     }

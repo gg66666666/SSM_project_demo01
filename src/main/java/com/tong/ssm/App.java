@@ -38,24 +38,13 @@ public class App {
 //
 //        emps.forEach(System.out::println);
 
+
 //        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContent.xml");
 //        EmpMapper bean = context.getBean(EmpMapper.class);
 //
 //        Emp emp = bean.selectByPrimaryKeyAndDept(5);
 //
 //        System.out.println(emp);
-
-        System.out.println("第二次添加");
-
-        System.out.println("第三次提交");
-
-        System.out.println("hot-fix1");
-
-        System.out.println("hot-fix2");
-
-        System.out.println("master...");
-
-        System.out.println("hot-fix3");
 
     }
 
